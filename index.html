@@ -2,13 +2,12 @@
 <html>
 
 <head>
-    <title>Mi portafolio personal</title>
+    <title>Mi Portfolio Web</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
     <header>
-        <h1>Alban Krug</h1>
-        <h2>Estudiante</h2>
         <nav>
             <ul>
                 <a href="#acerca-de-mi">Acerca de mí</a>
@@ -18,18 +17,14 @@
                 <a href="#contacto">Contacto</a>
             </ul>
         </nav>
+        <h1 id="nombre" class="animacion-titulo">Alban Krug</h1>
+        <h2 id="profesion">Estudiante</h2>
     </header>
     <main>
         <section id="acerca-de-mi">
             <h2>Acerca de mí</h2>
             <p>
-                Como desarrollador web junior, fusiono mi pasión por el diseño y la
-                programación para crear experiencias web excepcionales. Me esfuerzo por
-                cada línea de código y cada detalle de diseño para asegurarme de que mis
-                sitios web sean visualmente atractivos, funcionales y accesibles para
-                todos. Estoy comprometido a seguir aprendiendo y mejorando continuamente
-                mientras busco oportunidades desafiantes que amplíen mi experiencia en el
-                desarrollo web.
+                Como desarrollador web junior, fusiono mi pasión por el diseño y la programación para crear experiencias web excepcionales. Me esfuerzo por cada línea de código y cada detalle de diseño para asegurarme de que mis sitios web sean visualmente atractivos, funcionales y accesibles para todos. Estoy comprometido a seguir aprendiendo y mejorando continuamente mientras busco oportunidades desafiantes que amplíen mi experiencia en el desarrollo web.
             </p>
         </section>
         <section id="habilidades">
@@ -100,11 +95,20 @@
                     </ul>
                 </li>
             </ul>
+            <p>Si tienes alguna pregunta o quieres contactarme, puedes hacerlo a través del siguiente formulario:</p>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>
         <p>Copyright &copy; 2024</p>
     </footer>
 </body>
-
 </html>
